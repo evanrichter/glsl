@@ -1,0 +1,7 @@
+project: glsl
+target: parse-integral-lit
+
+cmds:
+  - cmd: /parse_integral_lit
+  - cmd: /parse_integral_lit_no_inst @@
+    libfuzzer: false

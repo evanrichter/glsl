@@ -1,0 +1,7 @@
+project: glsl
+target: parse-translation-unit
+
+cmds:
+  - cmd: /parse_translation_unit
+  - cmd: /parse_translation_unit_no_inst @@
+    libfuzzer: false

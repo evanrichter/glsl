@@ -1,0 +1,7 @@
+project: glsl
+target: transpile-expr
+
+cmds:
+  - cmd: /transpile_expr
+  - cmd: /transpile_expr_no_inst @@
+    libfuzzer: false

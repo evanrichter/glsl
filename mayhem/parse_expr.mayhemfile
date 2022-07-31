@@ -1,0 +1,7 @@
+project: glsl
+target: parse-expr
+
+cmds:
+  - cmd: /parse_expr
+  - cmd: /parse_expr_no_inst @@
+    libfuzzer: false
