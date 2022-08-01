@@ -123,3 +123,6 @@ mod parsers;
 pub mod syntax;
 pub mod transpiler;
 pub mod visitor;
+
+#[cfg(fuzzing)]
+pub use parsers::{expr, integral_lit, translation_unit};

@@ -3,6 +3,6 @@
 extern crate libfuzzer_sys;
 extern crate glsl;
 
-fuzz_target!(|data: &[u8]| {
-  glsl::parsers::integral_lit(data);
+fuzz_target!(|data: &str| {
+  let _ = glsl::integral_lit(data);
 });

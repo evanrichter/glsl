@@ -11,16 +11,14 @@ cargo-fuzz = true
 [dependencies.glsl]
 path = ".."
 [dependencies.libfuzzer-sys]
-git = "https://github.com/rust-fuzz/libfuzzer-sys.git"
-
-[dependencies.nom]
-version = "3.2"
-default-features = true
-features = ["verbose-errors"]
+version = "0.4"
 
 # Prevent this from interfering with workspaces
 [workspace]
 members = ["."]
+
+[profile.release]
+debug = 1
 
 [[bin]]
 name = "parse_expr"
